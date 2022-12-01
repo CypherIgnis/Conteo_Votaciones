@@ -2,9 +2,27 @@ class Votations():
 
     def __init__(self):
         print("Comenzando programa")
-        self.candidate=candidate
-        self.party=party
-        self.counting=counting
+        self.__candidate=candidate
+        self.__party=party
+        self.__counting=counting
+        
+    def get__candidate(self):
+        return self.__candidate
+    
+    def set__candidate(self,value):
+        self.__candidate = value
+    
+    def get__party(self):
+        return self.__party
+    
+    def set__party(self,value):
+        self.__party = value
+    
+    def get__counting(self):
+        return self.__counting
+    
+    def set__counting(self,value):
+        self.__counting = value
 
     def show_candidate(self):
         print(self.candidato)
